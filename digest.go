@@ -102,7 +102,7 @@ func parseChallenge(input string) (*challenge, error) {
 	var r []string
 	for i := range sl {
 		r = strings.SplitN(sl[i], "=", 2)
-		switch r[0] {
+		switch strings.Trim(r[0], " ") {
 		case "realm":
 			c.Realm = strings.Trim(r[1], qs)
 		case "domain":
