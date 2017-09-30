@@ -4,9 +4,7 @@
 
 ## Overview
 
-This is a fork of the (unmaintained) code.google.com/p/mlab-ns2/gae/ns/digest package.
-There's a descriptor leak in the original package, so this fork was created to patch
-the leak.
+This is a fork of github.com/bobziuchkovski/digest with just one fix where a 'case' condition wasn't hit due to extra space characters in the keyword.
 
 ## Usage
 
@@ -14,7 +12,7 @@ See the [godocs](https://godoc.org/github.com/bobziuchkovski/digest) for details
 
 ## Fork Maintainer
 
-Bob Ziuchkovski (@bobziuchkovski)
+Mikael Lönnroth (@mglonnro)
 
 ## Original Authors
 
