@@ -97,7 +97,7 @@ func parseChallenge(input string) (*challenge, error) {
 		return nil, ErrBadChallenge
 	}
 	s = strings.Trim(s[7:], ws)
-	sl := strings.Split(s, ", ")
+	sl := strings.Split(s, ",")
 	c := &challenge{
 		Algorithm: "MD5",
 	}
